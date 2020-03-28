@@ -1,6 +1,6 @@
 package Package;
 
-class Protection2 extends corejavapackage.Protection {
+class Protection2 extends corejavapackage.Java_13_Protection {
 	Protection2() {
 		System.out.println("derived other package constructor");
 		// class or package only
@@ -11,3 +11,8 @@ class Protection2 extends corejavapackage.Protection {
 		System.out.println("n_pub = " + n_pub);
 	}
 }
+
+// int n = 1;
+// private int n_pri = 2;
+// protected int n_pro = 3;
+// public int n_pub = 4;

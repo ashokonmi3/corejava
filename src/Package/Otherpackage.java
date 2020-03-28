@@ -2,7 +2,7 @@ package Package;
 
 class OtherPackage {
 	OtherPackage() {
-		corejavapackage.Protection p = new corejavapackage.Protection();
+		corejavapackage.Java_13_Protection p = new corejavapackage.Java_13_Protection();
 		System.out.println("other package constructor");
 		// class or package only
 		System.out.println("n = " + p.n);// default
@@ -13,3 +13,8 @@ class OtherPackage {
 		System.out.println("n_pub = " + p.n_pub);
 	}
 }
+
+// int n = 1;
+// private int n_pri = 2;
+// protected int n_pro = 3;
+// public int n_pub = 4;

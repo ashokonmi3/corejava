@@ -1,5 +1,147 @@
 package corejavapackage;
 
+//class Student {
+//	int rollno;// instance variable
+//	String name;
+//	String college;
+//
+//	// static String college = "IITB";// static variable
+//	// // constructor
+//	Student(int r, String n, String s) {
+//		rollno = r;
+//		name = n;
+//		college = s;
+//	}
+//
+//	// method to display the values
+//	void display() {
+//		System.out.println(rollno + " " + name + " " + college);
+//	}
+//}
+//
+//public class Java_14_staticDemoClass {// Test class to show the values of objects
+//	public static void main(String args[]) {
+//		Student s1 = new Student(111, "Karan", "IITB");
+//		Student s2 = new Student(222, "Aryan", "IITB");
+//		s1.display();
+//		s2.display();
+//
+//	}
+//}
+
+// =================================
+//class Student {
+//	int rollno;// instance variable
+//	String name;
+//	static String college = "IITB";// static variable
+//
+//	Student(int r, String n) {
+//		rollno = r;
+//		name = n;
+//
+//	}
+//
+//	// method to display the values
+//	void display() {
+//		System.out.println(rollno + " " + name + " " + college);
+//	}
+//}
+//
+//public class Java_14_staticDemoClass {// Test class to show the values of
+//	// objects
+//	public static void main(String args[]) {
+//		Student s1 = new Student(111, "Karan");
+//		Student s2 = new Student(222, "Aryan");
+//		s1.display();
+//		s2.display();
+//		// we can change the college of all objects by the single line of code
+//		// Student.college = "NIT";
+//		// s1.display();
+//		// s2.display();
+//		// System.out.println(s1.college);
+//		Student s3 = new Student(111, "Anusha");
+//		s3.college = "IIM";
+//		s3.display();
+//		s1.display();
+//		// s1.college = "NIIT";
+//		// System.out.println(s1.college);
+//
+//	}
+//}
+
+// ==================
+
+////
+//class Emp {
+//	String name;
+//	static int bankVault = 20;
+//
+//	static int getBankVaultValue() {
+//		return bankVault;
+//	}
+//}
+//
+//class Java_14_staticDemoClass {
+//	public static void main(String[] args) {
+//		Emp emp = null;
+//		System.out.println(emp.bankvault);
+//		System.out.println(emp.getBankVaultValue());
+//		System.out.println(emp.getBankVaultValue());
+//		//
+//		// System.out.println(emp.getBankVaultValue());
+//		Emp emp1 = new Emp();
+//		Emp emp2 = new Emp();
+//		Emp.bankVault = 40;
+//		emp2.bankVault = 20;
+//		emp1.bankVault = 10;
+//
+//		System.out.println(emp1.bankVault);
+//		System.out.println(emp2.bankVault);
+//		System.out.println(Emp.bankVault);
+//
+//	}
+//}
+
+// ===============================
+/// Java Program to demonstrate the use of an instance variable
+// which get memory each time when we create an object of the class.
+//class Java_14_staticDemoClass {
+//	int count = 0;// will get memory each time when the instance is created
+//	//
+//
+//	Java_14_staticDemoClass() {
+//		count++;// incrementing value
+//		System.out.println(count);
+//	}
+//
+//	public static void main(String args[]) {
+//		// Creating objects
+//		Java_14_staticDemoClass c1 = new Java_14_staticDemoClass();
+//		Java_14_staticDemoClass c2 = new Java_14_staticDemoClass();
+//		Java_14_staticDemoClass c3 = new Java_14_staticDemoClass();
+//	}
+//}
+
+// =====================================
+//class Java_14_staticDemoClass {
+//	static int count = 0;// will not get memory each time when the instance is
+//
+//	// created
+//
+//	Java_14_staticDemoClass() {
+//		count++;// incrementing value
+//		System.out.println(count);
+//	}
+//
+//	public static void main(String args[]) {
+//		// Creating objects
+//		Java_14_staticDemoClass c1 = new Java_14_staticDemoClass();
+//		Java_14_staticDemoClass c2 = new Java_14_staticDemoClass();
+//		Java_14_staticDemoClass c3 = new Java_14_staticDemoClass();
+//	}
+//}
+
+// ===============================
 /*
  * static keyword in java static is a non-access modifier in Java which is
  * applicable for the following:
@@ -11,19 +153,18 @@ package corejavapackage;
  * For example, in below java program, we are accessing static method m1()
  * without creating any object of Test class.
  */
+//
+public class Java_14_staticDemoClass {
+	static void m1() {
+		System.out.println("from static function m1");
+	}
 
-//public class staticDemoClass {
-//	static void m1() {
-//		System.out.println("from m1");
-//	}
-//
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//		m1();
-//
-//	}
-//
-//}
+	//
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		m1();
+	}
+}
 // =============================
 
 /*
@@ -32,27 +173,27 @@ package corejavapackage;
  * If you need to do computation in order to initialize your static variables,
  * you can declare a static block that gets executed exactly once, when the
  * class is first loaded. Consider the following java program demonstrating use
- * of static blocks.
-// */
-//class staticDemoClass
+ * of static blocks. //
+ */
+// class staticDemoClass
 //
-//{
-//	// static variable
-//	static int a = 10;
-//	static int b;
+// {
+// // static variable
+// static int a = 10;
+// static int b;
 //
-//	// static block
-//	static {
-//		System.out.println("Static block initialized.");
-//		b = a * 4;
-//	}
+// // static block
+// static {
+// System.out.println("Static block initialized.");
+// b = a * 4;
+// }
 //
-//	public static void main(String[] args) {
-//		System.out.println("from main");
-//		System.out.println("Value of a : " + a);
-//		System.out.println("Value of b : " + b);
-//	}
-//}
+// public static void main(String[] args) {
+// System.out.println("from main");
+// System.out.println("Value of a : " + a);
+// System.out.println("Value of b : " + b);
+// }
+// }
 
 // ==============================
 
@@ -67,30 +208,32 @@ package corejavapackage;
  * is the java program to demonstrate that static block and static variables are
  * executed in order they are present in a program.
  */
-
-//class staticDemoClass {
-//	// static variable
-//	static int a = m1();
 //
-//	// static block
-//	static {
-//		System.out.println("Inside static block");
-//	}
+// class staticDemoClass {
+// // static variable
+// static int a = m1();
+// static int b;
 //
-//	//
-//	// static method
-//	static int m1() {
-//		System.out.println("from m1");
-//		return 20;
-//	}
+// // static block
+// static {
+// System.out.println("Inside static block");
+// b = 10;
+// }
 //
-//	// static method(main !!)
-//	public static void main(String[] args) {
-//		System.out.println("Value of a : " + a);
-//		System.out.println("from main");
-//	}
+// //
+// // static method
+// static int m1() {
+// System.out.println("from m1");
+// return 20;
+// }
 //
-//}
+// // static method(main !!)
+// public static void main(String[] args) {
+// System.out.println("Value of a : " + b);
+// System.out.println("from main");
+// }
+//
+// }
 // ==========================
 
 /*
@@ -105,38 +248,38 @@ package corejavapackage;
  * the java program to demonstrate restrictions on static methods. //java
  * program to demonstrate restriction on static methods
  */
-//class staticDemoClass {
-//	// static variable
-//	static int a = 10;
+// class staticDemoClass {
+// // static variable
+// static int a = 10;
 //
-//	// instance variable
-//	int b = 20;
+// // instance variable
+// int b = 20;
 //
-//	// static method
-//	static void m1() {
-//		a = 20;
-//		System.out.println("from m1");
+// // static method
+// static void m1() {
+// a = 20;
+// System.out.println("from m1");
 //
-//		// Cannot make a static reference to the non-static field b
-//		b = 10; // compilation error
+// // Cannot make a static reference to the non-static field b
+// b = 10; // compilation error
 //
-//		// Cannot make a static reference to the
-//		// non-static method m2() from the type Test
-//		m2(); // compilation error
+// // Cannot make a static reference to the
+// // non-static method m2() from the type Test
+// m2(); // compilation error
 //
-//		// Cannot use super in a static context
-//		System.out.println(super.a); // compiler error
-//	}
+// // Cannot use super in a static context
+// System.out.println(super.a); // compiler error
+// }
 //
-//	// instance method
-//	void m2() {
-//		System.out.println("from m2");
-//	}
+// // instance method
+// void m2() {
+// System.out.println("from m2");
+// }
 //
-//	public static void main(String[] args) {
-//		// main method
-//	}
-//}
+// public static void main(String[] args) {
+// // main method
+// }
+// }
 // ===============================================
 
 /*
@@ -154,56 +297,63 @@ package corejavapackage;
  * 
  * // Student class
  */
-class Student {
-	String name;
-	int rollNo;
+// class Student {
+// String name;
+// int rollNo;
+// static String cllgName; // static variabl
+// static int counter = 0; // static counter to set unique id
+//
+// public Student(String name1) {
+// name = name1;
+// rollNo = setRollNo();
+// }
+//
+// static int setRollNo() {// getting unique rollNo through static
+// // variable(counter)
+// counter++;
+// return counter;
+// }
+//
+// static void setCllg(String name) {
+// cllgName = name;
+// }
+//
+// // instance method
+// void getStudentInfo() {
+// System.out.println("name : " + name);
+// System.out.println("rollNo : " + rollNo);
+// // accessing static variable
+// System.out.println("cllgName : " + cllgName);
+// }
+// }
+//
+// public class staticDemoClass {
+// public static void main(String[] args) {
+// // calling static method
+// // without instantiating Student class
+// Student.setCllg("XYZ");
+// Student.cllgName = "abc";
+// Student s1 = new Student("Alice");
+// Student s2 = new Student("Bob");
+// s1.getStudentInfo();
+// s2.getStudentInfo();
+// Student s3 = new Student("Sushma");
+// s3.getStudentInfo();
+//
+// }
+// }
+// ================
 
-	// static variable
-	static String cllgName;
-
-	// static counter to set unique roll no
-	static int counter = 0;
-
-	public Student(String name) {
-		this.name = name;
-
-		this.rollNo = setRollNo();
-	}
-
-	// getting unique rollNo
-	// through static variable(counter)
-	static int setRollNo() {
-		counter++;
-		return counter;
-	}
-
-	// static method
-	static void setCllg(String name) {
-		cllgName = name;
-	}
-
-	// instance method
-	void getStudentInfo() {
-		System.out.println("name : " + this.name);
-		System.out.println("rollNo : " + this.rollNo);
-
-		// accessing static variable
-		System.out.println("cllgName : " + cllgName);
-	}
-}
-
-// Driver class
-public class staticDemoClass {
-	public static void main(String[] args) {
-		// calling static method
-		// without instantiating Student class
-		Student.setCllg("XYZ");
-
-		Student s1 = new Student("Alice");
-		Student s2 = new Student("Bob");
-
-		s1.getStudentInfo();
-		s2.getStudentInfo();
-
-	}
-}
+// class staticDemoClass {
+//
+// static Integer i;
+//
+// public static void main(String[] args) {
+// try {
+// // System.out.println(i.compareTo(0));
+// System.out.println(i);
+// } catch (ArithmeticException | NullPointerException e) {
+// System.out.println("Exception");
+// }
+// }
+// }

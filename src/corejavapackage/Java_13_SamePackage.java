@@ -1,8 +1,8 @@
 package corejavapackage;
 
-class SamePackage {
-	SamePackage() {
-		Protection p = new Protection();
+class Java_13_SamePackage {
+	Java_13_SamePackage() {
+		Java_13_Protection p = new Java_13_Protection();
 		System.out.println("same package constructor");
 		System.out.println("n = " + p.n);
 		// class only
