@@ -192,73 +192,74 @@ package corejavapackage;
 // System.out.println("Volume is " + vol);
 // }
 // }
-//
+
 // ================================
 
 /*
  * Here, Box uses a parameterized constructor to initialize the dimensions of a
  * box.
  */
-//class Box1 {
-//	double width;
-//	double height;
-//	double depth;
+// class Box1 {
+// double width;
+// double height;
+// double depth;
 //
-//	Box1(double w, double h, double d) {
-//		width = w;
-//		height = h;
-//		depth = d;
-//	}
+// Box1(double w, double h, double d) {
+// width = w;
+// height = h;
+// depth = d;
+// }
 //
-//	double volume() {
-//		return width * height * depth;
-//	}
-//}
+// double volume() {
+// return width * height * depth;
+// }
+// }
 //
-//class Java_09_Class {
-//	public static void main(String args[]) {
-//		// // declare, allocate, and initialize Box objects
-//		Box1 mybox1 = new Box1(10, 20, 15);
-//		// Employee emp1 = new Employee("ashok", 30, "python");
-//		Box1 mybox2 = new Box1(3, 6, 9);
-//		double vol;
-//		// // get volume of first box
-//		vol = mybox1.volume();
-//		System.out.println("Volume is " + vol);
-//		// // get volume of second box
-//		vol = mybox2.volume();
-//		System.out.println("Volume is " + vol);
-//	}
-//}
+// class Java_09_Class {
+// public static void main(String args[]) {
+// // // declare, allocate, and initialize Box objects
+// Box1 mybox1 = new Box1(10, 20, 15);
+// // Employee emp1 = new Employee("ashok", 30, "python");
+// Box1 mybox2 = new Box1(3, 6, 9);
+// double vol;
+// // // get volume of first box
+// vol = mybox1.volume();
+// System.out.println("Volume is " + vol);
+// // // get volume of second box
+// vol = mybox2.volume();
+// System.out.println("Volume is " + vol);
+// }
+// }
 
 // ========================
-//class Employee {
-//	void Employee() {
-//		System.out.println("Constructor");
-//	}
-//}
+// class Employee {
+// void Employee() {// this is not constructor as it has return type
+// System.out.println("Constructor");
+// }
+// }
 //
-//class Java_09_Class {
-//	public static void main(String args[]) {
-//		Employee emp = new Employee();// Doesn’t call method Employee with
+// class Java_09_Class {
+// public static void main(String args[]) {
+// Employee emp = new Employee();// Doesn’t call method Employee with
+//// emp.Employee();
 //
-//	}
-//}
+// }
+// }
 // ============
-//class Employee {
-//	void Employee() {
-//		System.out.println("not a Constructor now");
+// class Employee {
+// void Employee() {
+// System.out.println("not a Constructor now");
 //
-//	}
-//}
+// }
+// }
 //
-//class Java_09_Class {
-//	public static void main(String args[]) {
-//		Employee emp = new Employee();
-//		emp.Employee();// Prints "not a Constructor now"
+// class Java_09_Class {
+// public static void main(String args[]) {
+// Employee emp = new Employee();
+// emp.Employee();// Prints "not a Constructor now"
 //
-//	}
-//}
+// }
+// }
 // ================
 // A constructor must not define any return type. Instead, it creates
 // and returns an object of the class in which it’s defined. If you define a
@@ -267,36 +268,36 @@ package corejavapackage;
 // name as its class
 // ================
 
-//class Employee {
-//	{
+// class Employee {
+// {
 //
-//		System.out.println("Employee:initializer");
-//	}
-//}
+// System.out.println("Employee:initializer");
+// }
+// }
 //
-//class Java_09_Class {
-//	public static void main(String args[]) {
-//		Employee e = new Employee();
+// class Java_09_Class {
+// public static void main(String args[]) {
+// Employee e = new Employee();
 //
-//	}
-//}
+// }
+// }
 // ============
-class Employee {
-	Employee() {// Creates an object of class Employee;
-		System.out.println("Employee:constructor");
-	}
-
-	{
-		System.out.println("Employee:initializer"); // Constructor Initializer block
-
-	}
-}
-
-class Java_09_Class {
-	public static void main(String args[]) {
-		Employee e = new Employee(); // initializer block and the constructor
-		Employee e1 = new Employee(); // initializer block and the constructor
-
-	}
-
-}
+// class Employee {
+// Employee() {// Creates an object of class Employee;
+// System.out.println("Employee:constructor");
+// }
+//
+// {
+// System.out.println("Employee:initializer"); // Constructor Initializer block
+//
+// }
+// }
+//
+// class Java_09_Class {
+// public static void main(String args[]) {
+// Employee e = new Employee(); // initializer block and the constructor
+// Employee e1 = new Employee(); // initializer block and the constructor
+//
+// }
+//
+// }

@@ -4,11 +4,11 @@ class Java_13_SamePackage {
 	Java_13_SamePackage() {
 		Java_13_Protection p = new Java_13_Protection();
 		System.out.println("same package constructor");
-		System.out.println("n = " + p.n);
+		System.out.println(" default n = " + p.n);
 		// class only
-		System.out.println("n_pri = " + p.n_pri);
-		System.out.println("n_pro = " + p.n_pro);// same package so accessible
-		System.out.println("n_pub = " + p.n_pub);
+		System.out.println("privat n_pri = " + p.n_pri);
+		System.out.println("protected n_pro = " + p.n_pro);// same package so accessible
+		System.out.println("public n_pub = " + p.n_pub);
 	}
 }
 

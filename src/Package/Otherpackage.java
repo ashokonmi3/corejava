@@ -5,12 +5,12 @@ class OtherPackage {
 		corejavapackage.Java_13_Protection p = new corejavapackage.Java_13_Protection();
 		System.out.println("other package constructor");
 		// class or package only
-		System.out.println("n = " + p.n);// default
+		System.out.println("default n = " + p.n);// default
 		// class only
-		System.out.println("n_pri = " + p.n_pri);// private
+		System.out.println("private n_pri = " + p.n_pri);// private
 		// class, subclass or package only
-		System.out.println("n_pro = " + p.n_pro);
-		System.out.println("n_pub = " + p.n_pub);
+		System.out.println("protected n_pro = " + p.n_pro);
+		System.out.println("public n_pub = " + p.n_pub);
 	}
 }
 

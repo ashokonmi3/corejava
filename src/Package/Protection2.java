@@ -4,11 +4,11 @@ class Protection2 extends corejavapackage.Java_13_Protection {
 	Protection2() {
 		System.out.println("derived other package constructor");
 		// class or package only
-		System.out.println("n = " + n);
+		System.out.println("default n = " + n);
 		// class only
-		System.out.println("n_pri = " + n_pri);
-		System.out.println("n_pro = " + n_pro);
-		System.out.println("n_pub = " + n_pub);
+		System.out.println("priivate n_pri = " + n_pri);
+		System.out.println("protected n_pro = " + n_pro);
+		System.out.println("public n_pub = " + n_pub);
 	}
 }
 

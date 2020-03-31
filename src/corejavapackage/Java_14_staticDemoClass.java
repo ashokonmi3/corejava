@@ -55,15 +55,15 @@ package corejavapackage;
 //		s1.display();
 //		s2.display();
 //		// we can change the college of all objects by the single line of code
-//		// Student.college = "NIT";
-//		// s1.display();
-//		// s2.display();
+//		Student.college = "NIT";
+//		s1.display();
+//		s2.display();
 //		// System.out.println(s1.college);
 //		Student s3 = new Student(111, "Anusha");
 //		s3.college = "IIM";
 //		s3.display();
 //		s1.display();
-//		// s1.college = "NIIT";
+//		// // s1.college = "NIIT";
 //		// System.out.println(s1.college);
 //
 //	}
@@ -84,7 +84,7 @@ package corejavapackage;
 //class Java_14_staticDemoClass {
 //	public static void main(String[] args) {
 //		Emp emp = null;
-//		System.out.println(emp.bankvault);
+//		// System.out.println(emp.bankvault);
 //		System.out.println(emp.getBankVaultValue());
 //		System.out.println(emp.getBankVaultValue());
 //		//
@@ -160,6 +160,7 @@ public class Java_14_staticDemoClass {
 	}
 
 	//
+	// //
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		m1();

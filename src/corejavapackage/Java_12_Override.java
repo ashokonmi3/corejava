@@ -11,7 +11,6 @@ package corejavapackage;
 //	// display i and j
 //	void show() {
 //		System.out.println("I am in A2 parent class");
-//
 //		System.out.println("i and j: " + i + " " + j);
 //	}
 //}
@@ -25,7 +24,7 @@ package corejavapackage;
 //		k = c;
 //	}
 //
-//	// // display k – this overrides show() in A
+//	// display k – this overrides show() in A
 //	void show() {
 //		System.out.println("I am in B2 child class");
 //
