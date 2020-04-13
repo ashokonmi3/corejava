@@ -226,7 +226,7 @@ package corejavapackage;
 // matching each else with its nearest unmatched if statement.
 
 // ============================================
-// The switch state- ment doesn’t accept arguments of type long, float,
+// The switch state- ment doesnâ€™t accept arguments of type long, float,
 // or double,
 //
 // or any
@@ -428,8 +428,8 @@ package corejavapackage;
 //	}
 //}
 // ====================
-// Variable avg can’t be accessed because it’s local to the if block. Variables
-// local to the if block can’t be accessed in the else block.
+// Variable avg canâ€™t be accessed because itâ€™s local to the if block. Variables
+// local to the if block canâ€™t be accessed in the else block.
 public class Java_03_IF_Else {
 	public static void main(String[] args) {
 		double marks1, marks2, marks3;
@@ -484,7 +484,7 @@ public class Java_03_IF_Else {
 // whether the year is a leap year or not.
 // # (Hint: Use the % (modulus) operator)
 // # 8) A five-digit number is entered through the keyboard. Write aprogram to
-// obtain the revezl
+// obtain the reverse of thta number
 
 // ===============================
 
